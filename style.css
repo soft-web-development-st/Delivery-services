@@ -1,0 +1,797 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color-grey: #BEBEBE;
+    --font-blue: #001399;
+    --secondary-grey: #808080;
+    --forth-color-grey: #5A5B5D;
+
+}
+
+body {
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+}    
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h3 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    letter-spacing: 0.1rem;
+}
+
+.container {
+    width: 85%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+/* Main */
+.main {
+    width: 100%;
+    height: 500px;
+    background: url('./images/hero-pic.jpg') no-repeat center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-size: 100% 100%;
+    border-radius: .1rem;
+    z-index: 1;
+}
+
+.main:after {
+    position: absolute;
+    content: '';
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.main h1, 
+.main h2, 
+.main h3 {
+    color: white;
+    text-transform: uppercase;
+    z-index: 2;
+}
+
+.main h1 {
+    font-size: 5rem;
+    margin-bottom: 35px;
+}
+
+.main h2 {
+    font-size: 2rem;
+}
+
+.main h3 {
+    font-size: 1.5rem;
+}
+
+/* Delivery Options */
+.delivery {
+    position: relative;
+}
+
+.delivery-options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;  
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 100px;
+    left: 0;
+    right: 0;   
+    z-index: 3;
+}
+
+.delivery-option {
+    background-color: white;
+}
+
+.delivery-option {
+    padding: 2rem;
+}
+
+.delivery-option i {
+    color: var(--primary-color-grey);
+}
+
+.delivery-option h5 {
+    color: var(--font-blue);
+    text-transform: uppercase;
+    margin: .8rem 0;
+    font-size: 1.2rem;
+}
+
+.delivery-option p {
+    color: var(--primary-color-grey);
+    font-size: 1rem;
+} 
+/* About Us */
+.about-us {
+    margin: 170px 0 100px 0;
+    text-align: center;
+    position: relative;
+}
+
+.about-us h3 {
+    font-size: 3rem;
+    color: var(--font-blue);
+    margin-bottom: 1.5rem;
+}
+
+.about-us-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: .5rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about-us-img img {
+    height: 17rem;
+    width: 25rem;
+}
+
+.about-us-info p, 
+.our-services p {
+    font-size: .8rem;
+    font-weight: lighter;
+    text-align: left;
+    color: var(--forth-color-grey);
+}
+
+.about-us-info p {
+    margin-right: 4rem;
+}
+
+.about-us-info p:last-child {
+    margin-top: .8rem;
+}
+
+.about-us-button {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 4.2rem;
+}
+
+.about-us-button a {
+    cursor: pointer;
+    display:inline-block;
+    padding: 0.6250em 1.2500em;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 2px solid var(--primary-color-grey); 
+}
+
+/* Our Services */
+.services {
+    background-color: #F5F5F5;
+}
+.services-info {
+    padding: 60px 0 60px 0;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px; 
+}
+
+.our-services h3 {
+    font-size: 3rem;
+    color: var(--font-blue);
+    margin-bottom: 1rem;
+}
+
+.our-services img {
+    height: 10rem;
+    width: 100%;
+}
+
+.our-services h5 {
+    color: var(--font-blue);
+    margin: 20px 0;
+    font-size: 1rem;
+}
+
+/* Our Clients */
+.our-clients, 
+.advantage {
+    background-color: #09006A;
+    color: white;
+    padding: 60px 0 60px 0;
+    text-align: center;
+}
+
+.client-title {
+    text-transform: uppercase;
+}
+
+.clients {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2.5rem 0;;
+}
+
+.client-testimony {
+    padding: 2rem;
+    margin: 1rem;
+    background: rgba(38, 32, 107, 0.3);
+    box-shadow: 0 0 1px #ccc;
+}
+
+.client-testimony p {
+    font-size: .8rem;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.client-testimony h4, 
+.client-testimony h5 {
+    text-align: right;
+}
+
+.client-testimony h4 {
+    font-weight: lighter;
+}
+
+.company-logos {
+    display: flex;
+    justify-content: center;
+}
+
+.company {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+}
+
+.company i {
+    padding: 0.1rem;
+}
+
+.company-1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.company-2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+.company-3 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;   
+}
+
+.company-4 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;  
+}
+
+/* Map */
+.map {
+    padding: 70px 0 70px 0;
+    color: var(--font-blue);
+    opacity: 0.5;
+    text-align: center;
+}
+
+.map-layout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.map-pic img {
+    width: 35rem;
+    margin-left: 3rem;
+}
+
+.map-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-right: 1rem;
+}
+
+.stat {
+    text-align: left;
+    margin: 1rem 0;
+}
+
+.stat h5 {
+    font-size: 3rem;
+}
+
+/* Advantage */
+.advantage-contents {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    padding: 0 8rem;
+}
+
+.advantage-left  {
+    text-align: left;
+}
+
+.advantage-left a {
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    display:inline-block;
+    padding: 0.7250em 4.2500em;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 2px solid white; 
+}
+
+.advantage-right p {
+    font-size: .8rem;
+    text-align: left;
+}
+
+/* Awards */
+.awards {
+    padding: 70px 0 70px 0;
+    text-align:center
+}
+
+.awards h3 {
+    text-transform: uppercase;
+    color: var(--font-blue);
+    margin-bottom: 3rem;
+}
+
+.award-logos {
+    display: inline-block;
+    box-shadow: 5px 10px 8px 10px #d8d7d7;
+    padding: 1rem 4rem;
+}
+
+.award-logos img {
+    width: 7rem;
+    height: 7rem;
+    margin-right: 2rem;
+}
+
+/* Footer */
+.footer {
+    background-color: #09006A;
+    color: white;
+    padding: 1rem 0;
+}
+
+.footer-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.links {
+    display: flex;  
+}
+
+.links li {
+    padding: 0 2rem;  
+}
+
+.links a {
+    color: white;
+}
+
+.links a:hover {
+    font-size: 1.2rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo i {
+    margin-right: .5rem;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+    /* Main */
+    .delivery-options {
+        bottom: 750px;
+    }
+
+    /* About Us */
+    .about-us {
+        margin: 130px 0 90px 0;
+    }
+
+    .about-us-content {
+        margin-bottom: 2rem;
+    }
+
+    .about-us-button a {
+        font-size: .8rem;
+    }
+
+    .clients {
+        max-width: 700px;
+        margin: auto;
+    }
+
+    /* Map */
+    .map-pic img {
+        width: 20rem;
+        height: 15rem;
+        margin-left: 3rem;
+    }
+
+    /* Advantage */
+    .advantage-right {
+        margin-left: 2rem;
+    }
+
+    .advantage-left h3{
+        line-height: 3.2rem;
+    }
+   
+    /* Awards */
+    .awards {
+        padding: 35px 0 40px 0;
+    }
+}   
+
+@media screen and (max-width: 960px) {
+    .services-info, 
+    .our-clients, 
+    .advantage,
+    .map,
+    .awards {
+        padding: 40px 0 40px 0;
+    }
+    
+    .about-us h3,
+    .our-services h3,
+    .our-clients h3,
+    .advantage-left h3,
+    .awards h3 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    /* Main */
+    .main h1 {
+        font-size: 3rem;
+    }
+
+    .main h2 {
+        font-size: 1.5rem;
+    }
+    
+    .main h3 {
+        font-size: 1rem;
+        margin-bottom: .6rem;
+    }
+
+    /* Delivery */
+    .delivery-options {
+        bottom: 3px;
+    }
+
+    .delivery-option {
+        background-color: white;
+    }
+    
+    .delivery-option {
+        padding: 1rem;
+    }
+    
+    .delivery-option i {
+        color: var(--primary-color-grey);
+        font-size: 1rem;
+    }
+    
+    .delivery-option h5 {
+        margin: .3rem 0;
+        font-size: .8rem;
+    }
+    
+    .delivery-option p {
+        color: var(--primary-color-grey);
+        font-size: .6rem;
+    } 
+
+    /* About */
+    .about-us {
+        margin: 70px 0;
+    }
+
+    .about-us-content {
+        margin-bottom: .6rem;
+    }
+
+    .about-us h3 {
+        font-size: 2.3rem;
+    }
+
+    .about-us-img img {
+        height: 12rem;
+        width: 17rem;
+    }
+
+    .about-us-button a {
+        padding: 0.5250em 1.1500em;
+    }
+
+    /* Services */
+    .services-info {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .our-services h5 {
+        margin: 15px 0;
+    }
+
+    /* Our Clients */
+    .clients {
+        margin: 1.5rem 0;;
+    }
+
+    .company {
+        padding: 1rem;
+    }
+
+    /* Map */
+    .stat {
+        text-align: center;
+        margin: 0;
+    }
+
+    .map-stats {
+        margin-right: .2rem;
+    }
+    
+    .stat h5 {
+        font-size: 1.5rem;
+    }
+
+    .map-pic img {
+        width: 20rem;
+        height: 10rem;
+        margin-top: 1rem;
+        margin-left: 0rem;
+    }
+
+    /* Advantage */
+    .advantage-contents {
+        padding: 0 4rem;
+    }
+
+    .advantage-left {
+        margin-right: 1rem;
+    }
+
+    .advantage-left a {
+        padding: 0.4250em 1.1500em;
+        font-size: .7rem;
+    }
+
+    /* Awards */
+    .award-logos {
+        padding: 1rem 2rem;
+    }
+    
+    .award-logos img {
+        width: 5rem;
+        height: 5rem;
+        margin-right: 1rem;
+    }
+
+    /* Footer */
+    .links li {
+        padding: 0 1rem;  
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Main */
+    .delivery-options {
+        bottom: 480px;
+    }
+
+    /* About Us */
+    .about-us-info-2 {
+        display: none;
+    }
+
+    /* Clients */
+    .client-testimony {
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    /* Main */
+
+    .main {
+        width: 100%;
+        height: 300px;
+        
+    }
+    .main h1 {
+        font-size: 2rem;
+        margin: 4rem 0 10px 0;
+    }
+
+    /* Delivery */
+    .delivery-options {
+        position: none;
+    }
+
+    /* Linebreak */
+    .linebreak {
+        border-bottom: 1px solid #D3D3D3;
+        width: 50%;
+        margin: 3rem auto 0 auto;
+    }
+
+    /* About Us */
+    .about-us {
+        margin: 20px 0;
+    }
+    .about-us-content {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .about-us-info p {
+        text-align: center;
+        padding: 1rem;
+        margin: 0;
+    }
+
+    .about-us-button {
+        justify-content: center;
+        margin: 0;
+    }
+
+    /* Services */ 
+    .services,
+    .our-services p {
+        text-align: center;
+    }
+
+    .services-info {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    /* Our Clients */
+    .client-title {
+        font-size: .9rem;
+    }
+
+    .clients {
+        margin: 1rem 0;
+    }
+
+    .company-logos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Map */
+    .stat {
+        margin: 0 0 0.5rem 0.5rem;;
+    }
+
+    .stat p {
+        font-size: .8rem;
+    }
+
+    .map-pic img {
+        width: 10rem;
+        height: 5rem;
+        margin-top: .5rem;
+        margin-left: 0rem;
+    }
+
+    /* Advantage */
+    .advantage-contents {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0 .5rem;
+    }
+
+    .advantage-left h3, 
+    .awards h3 {
+        line-height: 2.2rem;
+    }
+
+    .advantage-left {
+         text-align: center;
+    }
+
+    .advantage-right p {
+        font-size: .7rem;
+        margin-top: .8rem;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    /* Delivery */
+    .delivery-options {
+        bottom: 220px;
+    }
+
+    .delivery-option {
+        padding: .2rem;
+    }
+
+    .delivery-option h5 {
+        margin: 0;
+        font-size: .5rem;
+    }
+
+    /* Awards */
+    .award-logos {
+        padding: .2rem .8rem;
+    }
+
+    .award-logos img {
+        width: 5rem;
+        height: 5rem;
+        margin-right: 0;
+    }
+
+    /* Footer */
+    .footer-nav {
+        justify-content: space-evenly;
+    }
+
+    .links {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    /* Clients */
+    .company-logos {
+        display: none;
+    }
+
+    /* Advantage */
+    .advantage-left, 
+    .advantage-right {
+         margin: 0;
+    } 
+}
